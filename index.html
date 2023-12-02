@@ -5,8 +5,7 @@
 </head>
 <body>
   <header>
-    <a href="">Admission is Open, Grab your seat now</a> <br><!--не поняла, это ссылка на логин?-->
-    <!--Я так поняла, сюда h1 заголовок нужен, который скрыт?-->
+    <a href="">Admission is Open, Grab your seat now</a>
     <a class="logo" href=""><img src="" alt="Little Learners Logo"></a>
     <nav class="main-nav">
         <ul class="top-menu">
@@ -20,14 +19,21 @@
     </nav>
   </header>
   <main>
-    <div class="container">
-        <img src="" alt="Happy children">
-    </div>
     <section>
-        <h3>Welcome to Little Learners Academy</h3>
+        <img src="" alt="Happy children">
+        <div class="content">
+        <h1>Welcome to Little Learners Academy</h1>
         <h2>Where Young Minds Blossom and Dreams Take Flight.</h2>
         <p>Our kinder garden school provides a nurturing and stimulating environment, fostering a love for learning that lasts a lifetime. Join us as we embark on an exciting educational journey together!</p>
-
+        <dl>
+          <dt>+7000</dt>
+          <dd>Students Passed Out</dd>
+          <dt>+37</dt>
+          <dd>Awords &amp; Recognitions</dd>
+          <dt>+15</dt>
+          <dd>Experience Educators</dd>
+        </dl>
+        </div>
     </section>
 
    <section>
@@ -63,52 +69,78 @@
     <p>Their Happy Words 🤗</p>
     <h2>Our Testimonials</h2>
     <p>Our testimonials are heartfelt reflections of the nurturing environment we provide, where children flourish both academically and emotionally.</p>
-    <button>←</button>
-    <article>
-      <img class="userpic" src="" alt="profile photo">
-      <h4>Jennifer B</h4>
-      <p>Little Learners Academy has been a second home for my child. The caring staff and engaging programs have made her excited to go to school every day!</p>
-    </article>
-    <article>
-      <img class="userpic" src="" alt="profile photo">
-      <h4>David K</h4>
-      <p>Choosing Little Learners Academy for my daughter was the best decision. She has thrived in their nurturing and stimulating environment.</p>
-    </article>
-    <article>
-      <img class="userpic" src="" alt="profile photo">
-      <h4>Emily L</h4>
-      <p>My son's social and academic growth has been remarkable since joining Little Learners Academy. I am grateful for the supportive and dedicated teachers.</p>
-    </article>
-    <button>→</button>
+    <div class="cards">
+      <button>←</button>
+      <article><!--валидатор ругается, говорит, что нужен заголовок. получается, не через article нужно делать?-->
+        <img class="userpic" src="" alt="profile photo">
+        <blockquote>
+        <cite>Jennifer B</cite>
+        <p>Little Learners Academy has been a second home for my child. The caring staff and engaging programs have made her excited to go to school every day!</p>
+        </blockquote>
+      </article>
+      <article>
+        <img class="userpic" src="" alt="profile photo">
+        <blockquote>
+        <cite>David K</cite>
+        <p>Choosing Little Learners Academy for my daughter was the best decision. She has thrived in their nurturing and stimulating environment.</p>
+        </blockquote>
+      </article>
+      <article>
+        <img class="userpic" src="" alt="profile photo">
+        <blockquote>
+        <cite>Emily L</cite>
+        <p>My son's social and academic growth has been remarkable since joining Little Learners Academy. I am grateful for the supportive and dedicated teachers.</p>
+        </blockquote>
+      </article>
+      <button>→</button>
+    </div>
    </section>
    <section>
     <p>Solutions For The Doubts</p>
     <h2>Frequently Asked Questions</h2>
     <p>Find all the essential information you need in our FAQ section, designed to address the most frequently asked questions and help you make informed decisions for your child's education.</p>
-    <h4>What are the school hours at Little Learners Academy?</h4>
-    <p>Our school hours are from 8:00 AM to 3:00 PM, Monday to Friday. We also offer extended care options for parents who need early drop-off or late pick-up.</p>
-    <button>-</button>
-    <h4>Is there a uniform policy for students?</h4>
-    <p></p>
-    <button>+</button>
-    <h4>What extracurricular activities are available for students?</h4>
-    <p></p>
-    <button>+</button>
-    <h4>What extracurricular activities are available for students?</h4>
-    <p></p>
-    <button>+</button>
-    <h4>How do you handle food allergies and dietary restrictions?</h4>
-    <p></p>
-    <button>+</button>
-    <h4>What is the teacher-to-student ratio at Little Learners Academy?</h4>
-    <p></p>
-    <button>+</button>
-    <h4>How do you handle discipline and behavior management?</h4>
-    <p></p>
-    <button>+</button>
-    <h4>How do I apply for admission to Little Learners Academy?</h4>
-    <p></p>
-    <button>+</button>
+    <div class="questions">
+      <details>
+        <summary>What are the school hours at Little Learners Academy?</summary>
+        <p>Our school hours are from 8:00 AM to 3:00 PM, Monday to Friday. We also offer extended care options for parents who need early drop-off or late pick-up.</p>
+        <button>-</button>
+      </details>
+      <details>
+        <summary>Is there a uniform policy for students?</summary>
+        <p></p>
+        <button>+</button>
+      </details>
+      <details>
+        <summary>What extracurricular activities are available for students?</summary>
+        <p></p>
+        <button>+</button>
+      </details>
+      <details>
+        <summary>What extracurricular activities are available for students?</summary>
+        <p></p>
+        <button>+</button>
+      </details>
+      <details>
+        <summary>How do you handle food allergies and dietary restrictions?</summary>
+        <p></p>
+        <button>+</button>
+      </details>
+      <details>
+        <summary>What is the teacher-to-student ratio at Little Learners Academy?</summary>
+        <p></p>
+        <button>+</button>
+      </details>
+      <details>
+        <summary>How do you handle discipline and behavior management?</summary>
+        <p></p>
+        <button>+</button>
+      </details>
+      <details>
+        <summary>How do I apply for admission to Little Learners Academy?</summary>
+        <p></p>
+        <button>+</button>
+      </details>
+    </div>
    </section>
    <section>
     <p>Explore More</p>
@@ -137,52 +169,57 @@
    </section>
   </main>
   <footer>
-    <section>
-      <a href=""><img src="" alt="Little Learners logo"></a>
-      <h3>Little Learners</h3>
-      <p>We believe in the power of play to foster creativity,<br> problem-solving skills, and imagination.</p>
-    </section>
+    <div class="container">
+      <a href=""><img src="" alt="Little Learners logo">Little Learners</a>
+      <p>We believe in the power of play to foster creativity, problem-solving skills, and imagination.</p>
+    </div>
     <address class="contact-info">
       <img src="" alt="email">
-      <a href="hello@littlelearners.com">hello@littleleaners.com</a> <br>
+      <a href="hello@littlelearners.com">hello@littleleaners.com</a> 
       <img src="" alt="contact number">
-      <a href="+9191813 23 230">+9191813 23 2309</a> <br>
+      <a href="+9191813 23 230">+9191813 23 2309</a> 
       <img src="" alt="location">
       <a href="">Somewhere in the World</a>
     </address>
     <nav class="footer-nav">
+      <h3>Home</h3>
       <ul>
-        <li><strong>Home</strong></li>
-        <li>Features</li>
-        <li>Our Testimonials</li>
-        <li>FAQ</li>
+        <li><a href="">Features</a></li>
+        <li><a href="">Our Testimonials</a></li>
+        <li><a href="">FAQ</a></li>
       </ul>
+      <h3>About Us</h3>
       <ul>
-        <li><strong>About Us</strong></li>
-        <li>Our Mission</li>
-        <li>Our Vision</li>
-        <li>Awards and <br> Recognitions</li>
-        <li>History</li>
-        <li>Teachers</li>
+        <li><a href="">Our Mission</a></li>
+        <li><a href="">Our Vision</a></li>
+        <li><a href="">Awards and Recognitions</a></li>
+        <li><a href="">History</a></li>
+        <li><a href="">Teachers</a></li>
       </ul>
+      <h3>Academics</h3>
       <ul>
-        <li><strong>Academics</strong></li>
-        <li>Special Features</li>
-        <li>Gallery</li>
+        <li><a href="">Special Features</a></li>
+        <li><a href="">Gallery</a></li>
       </ul>
+      <h3>Contact Us</h3>
       <ul>
-        <li><strong>Contact Us</strong></li>
-        <li>Information</li>
-        <li>Map &amp; Direction</li>
+        <li><a href="">Information</a></li>
+        <li><a href="">Map &amp; Direction</a></li>
       </ul>
     </nav>
     <aside>
-      <a href="">Terms of Service</a> <a href="">Privacy Policy</a> <a href="">Cookie Policy</a>
-      <a href="facebook.com"><img src="" alt="facebook"></a>
-      <a href="tweeter.com"><img src="" alt="tweeter"></a>
-      <a href="???"><img src="" alt="???"></a>
+      <ul class="policy">
+        <li><a href="">Terms of Service</a></li>
+        <li><a href="">Privacy Policy</a></li>
+        <li><a href="">Cookie Policy</a></li>
+      </ul>
+      <ul class="social-media">
+        <li><a href="facebook.com"><img src="" alt="facebook"></a></li>
+        <li><a href="tweeter.com"><img src="" alt="tweeter"></a></li>
+        <li><a href="LinkedIn.com"><img src="" alt="LinkedIn"></a></li>
+      </ul> 
     </aside>
     <p>Copyright©<time datetime="2023-11-27T17:43">[2023]</time>Little Learners Academy. All rights reserved</p>
-  </footer>
+</footer>
 
 </body></html>
